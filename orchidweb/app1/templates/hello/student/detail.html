@@ -1,0 +1,21 @@
+<h1><p>here is the detail of {{object.name}} </h1>
+
+<h1> Name:{{object.name}} </h1>
+<h1>Age:{{object.age}} </h1>
+<h1>Active:{{object.present}}</h1>
+
+{{ students }}
+{{ all_students }}
+
+
+{% for student in students %}
+    {{ student.name }}
+
+{% endfor %}
+
+{% for student in all_students %}
+    {{ student.name }}
+    {{ student.present }}
+
+
+{% endfor %}

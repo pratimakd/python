@@ -1,0 +1,9 @@
+<h1>Student List</h1>
+{% comment %} jinja_code {% endcomment %}
+{{ object_list }}
+{% for author in object_list %}
+<br>
+{{author.position}}
+{{author.experience}}
+{{author.active}}
+{% endfor %}

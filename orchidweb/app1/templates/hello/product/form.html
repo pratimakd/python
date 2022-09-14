@@ -1,0 +1,7 @@
+<form method="POST" enctype="multipart/form-data">
+    <!--security token-->
+    <!--Using the formset-->
+    {% csrf_token %} <!--authenticates the requesting browser-->
+    {{ form.as_p}} <!--aligns the form from form.py in a table like structure-->
+    <input type="submit" value="submit">
+</form>

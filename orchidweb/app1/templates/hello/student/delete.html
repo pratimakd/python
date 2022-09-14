@@ -1,0 +1,9 @@
+<form method="POST" enctype="multipart/form-data">
+    <!--security token-->
+    <!--Using the formset-->
+    {% csrf_token %} <!--authenticates the requesting browser-->
+    <!--{{ form.as_p}} <!--aligns the form from form.py in a table like structure-->
+    <p> Are you sure you want to delete {{ object.name }}? </0>
+    <input type="submit" value="Ok">
+    <a class="button" href="/app1/student" value="cancel"> Cancel </a>
+</form>

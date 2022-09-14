@@ -1,0 +1,9 @@
+<h1>Product List</h1>
+{% comment %} jinja_code {% endcomment %}
+{{ object_list }}
+{% for product in object_list %}
+<br>
+{{product.title}}
+{{product.price}}
+{{product.desc}}
+{% endfor %}
